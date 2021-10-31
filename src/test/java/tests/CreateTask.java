@@ -99,6 +99,7 @@ public class CreateTask {
     
     @Test(priority = 1)
     public void myDailyTask() throws InterruptedException{
+    	timeout.timeout();
     	commonMethods.clickOnButton(Locators.createBtn);
     	timeout.timeout();
     	commonMethods.setText(Locators.wantTo, Locators.wantToText);
@@ -111,6 +112,7 @@ public class CreateTask {
     
     @Test(priority = 2)
     public void myFridayTask() throws InterruptedException{
+    	timeout.timeout();
     	commonMethods.clickOnButton(Locators.createBtn);
     	timeout.timeout();
     	commonMethods.setText(Locators.wantTo, Locators.FridayText);
@@ -130,7 +132,7 @@ public class CreateTask {
     
     @Test(priority = 3)
     public void subTask() throws InterruptedException{
-    	Thread.sleep(2000);
+    	Thread.sleep(4000);
     	commonMethods.clickOnButton(Locators.subTaskBtn);
     	timeout.timeout();
     	commonMethods.setTextWithClick(Locators.subTaskItemBtn, Locators.subTaskItemText);
@@ -142,6 +144,7 @@ public class CreateTask {
     }
     @Test(priority = 4)
     public void list() throws InterruptedException{
+    	Thread.sleep(4000);
     	driver.navigate().back();
     	commonMethods.clickOnButton(Locators.listIcon);
     	timeout.timeout();
@@ -155,16 +158,25 @@ public class CreateTask {
     
     @Test(priority = 5)
     public void shoppingList() throws InterruptedException{
+    	Thread.sleep(4000);
     	commonMethods.clickOnButton(Locators.shoppingListBtn);
     	timeout.timeout();
     	Thread.sleep(2000);
-    	commonMethods.setText(Locators.enterBtn, Locators.shoppingText1);
+    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText1);
     	timeout.timeout();
-    	commonMethods.setText(Locators.enterBtn, Locators.shoppingText2);
+    	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
-    	commonMethods.setText(Locators.enterBtn, Locators.shoppingText3);
+    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText2);
     	timeout.timeout();
-    	commonMethods.setText(Locators.enterBtn, Locators.shoppingText4);
+    	commonMethods.clickOnButton(Locators.enterBtn);
+    	timeout.timeout();
+    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText3);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.enterBtn);
+    	timeout.timeout();
+    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText4);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
         System.out.println("Successfully all the items appended on the list");
     }
