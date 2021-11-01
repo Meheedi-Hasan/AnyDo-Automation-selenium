@@ -160,21 +160,20 @@ public class CreateTask {
     public void shoppingList() throws InterruptedException{
     	Thread.sleep(4000);
     	commonMethods.clickOnButton(Locators.shoppingListBtn);
-    	timeout.timeout();
     	Thread.sleep(2000);
     	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText1);
     	timeout.timeout();
     	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
-    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText2);
+    	commonMethods.setText(Locators.shoppingListTextField2, Locators.shoppingText2);
     	timeout.timeout();
     	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
-    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText3);
+    	commonMethods.setText(Locators.shoppingListTextField2, Locators.shoppingText3);
     	timeout.timeout();
     	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
-    	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText4);
+    	commonMethods.setText(Locators.shoppingListTextField2, Locators.shoppingText4);
     	timeout.timeout();
     	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
@@ -184,7 +183,7 @@ public class CreateTask {
     @AfterClass
     public void tearDown() {
         timeout.timeout();
-        //driver.quit();
+        driver.quit();
     }
 }
 
