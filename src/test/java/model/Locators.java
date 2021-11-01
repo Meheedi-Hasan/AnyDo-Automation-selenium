@@ -65,11 +65,13 @@ public class Locators {
     //Shopping List
     public static By shoppingListBtn = By.xpath("//a[@class='AppSidebarGroupsItems__item__link']//div[@class='AppSidebarGroupsItems__item__categoryTitle fs-hide'][normalize-space()='My Shopping List']");
     public static By shoppingListTextField = By.xpath("//div[@class='SmartTypeQuickAddTextFieldWrapper']");
+    public static By shoppingListTextField2 = By.xpath("//div[@class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr']");
     public static By enterBtn = By.xpath("//button[@type='submit']");
     public static String shoppingText1= "T-shirt";
     public static String shoppingText2= "Pant";
     public static String shoppingText3= "Mouse";
     public static String shoppingText4= "KeyBoard";
+  
     
 
 }
