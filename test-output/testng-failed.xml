@@ -6,11 +6,17 @@
       <class name="tests.CreateTask">
         <methods>
           <include name="list"/>
+          <include name="checkNotification"/>
           <include name="myDailyTask"/>
           <include name="subTask"/>
+          <include name="createTag"/>
+          <include name="addSelection"/>
+          <include name="changeTheme"/>
           <include name="myFridayTask"/>
+          <include name="signOut"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="shoppingList"/>
         </methods>
       </class> <!-- tests.CreateTask -->
     </classes>
