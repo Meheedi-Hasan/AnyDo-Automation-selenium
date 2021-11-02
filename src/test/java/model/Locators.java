@@ -71,7 +71,27 @@ public class Locators {
     public static String shoppingText2= "Pant";
     public static String shoppingText3= "Mouse";
     public static String shoppingText4= "KeyBoard";
-  
     
+    //chane theme
+    public static By settingBtn = By.xpath("//button[@aria-label='Settings']");
+    public static By themeBtn = By.xpath("//div[normalize-space()='Theme']");
+    public static By darkBtn = By.xpath("//input[@value='DARK']");
+    public static By lightBtn = By.xpath("//input[@value='LIGHT']");
+    
+    //check notification
+    public static By notificationBtn = By.xpath("//button[@title='Notifications']");
+    public static By updatesBtn = By.xpath("//span[@class='NotificationsMenu__navigationBar']");
+    
+    //add selection
+    public static By moreOptionBtn = By.xpath("//button[@aria-label='More options']");
+    public static By multipleSelectionBtn = By.xpath("//button[normalize-space()='Multiple selection (B)']");
+    
+    //create tag
+    public static By tagBtn = By.xpath("//body/div[@id='root']/div[2]/div[1]/div[3]/nav[1]/ul[1]/li[4]/div[1]/div[2]/button[2]");
+    public static By noThanksBtn = By.xpath("//button[contains(text(),'No, thanks')]");
+    
+    //log out
+    public static By profileBtn = By.xpath("//div[@class='js-Portal portal-default']//button[1]//div[2]");
+    public static By signOutBtn = By.xpath("//div[normalize-space()='Sign Out']");
 
 }
