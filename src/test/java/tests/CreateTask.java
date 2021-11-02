@@ -158,7 +158,7 @@ public class CreateTask {
     
     @Test(priority = 5)
     public void shoppingList() throws InterruptedException{
-    	Thread.sleep(4000);
+    	Thread.sleep(3000);
     	commonMethods.clickOnButton(Locators.shoppingListBtn);
     	Thread.sleep(2000);
     	commonMethods.setTextWithClick(Locators.shoppingListTextField, Locators.shoppingText1);
@@ -178,6 +178,74 @@ public class CreateTask {
     	commonMethods.clickOnButton(Locators.enterBtn);
     	timeout.timeout();
         System.out.println("Successfully all the items appended on the list");
+    }
+    
+    @Test(priority = 6)
+    public void changeTheme() throws InterruptedException{
+    	Thread.sleep(3000);
+    	driver.navigate().back();
+    	commonMethods.clickOnButton(Locators.settingBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.themeBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.darkBtn);
+    	Thread.sleep(5000);
+    	commonMethods.clickOnButton(Locators.lightBtn);
+    	timeout.timeout();
+    	System.out.println("Successfully Chosing Dark browser appeared as dark. Again selecting Light system appeared as light");
+    	
+    }
+    
+    @Test(priority = 7)
+    public void checkNotification() throws InterruptedException{
+    	Thread.sleep(3000);
+    	//driver.navigate().back();
+    	commonMethods.clickOnButton(Locators.notificationBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.updatesBtn);
+    	timeout.timeout();
+    	System.out.println("Successfully Notification windows pops up");
+    	
+    }
+    
+    @Test(priority = 8)
+    public void addSelection() throws InterruptedException{
+    	Thread.sleep(3000);
+    	//driver.navigate().back();
+    	commonMethods.clickOnButton(Locators.shoppingListBtn);
+    	Thread.sleep(2000);
+    	commonMethods.clickOnButton(Locators.moreOptionBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.multipleSelectionBtn);
+    	timeout.timeout();
+    	System.out.println("Successfully All items selection mood enabled");
+    	
+    }
+    
+    @Test(priority = 9)
+    public void createTag() throws InterruptedException{
+    	Thread.sleep(3000);
+    	//driver.navigate().back();
+    	commonMethods.clickOnButton(Locators.tagBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.noThanksBtn);
+    	timeout.timeout();
+    	System.out.println("Successfully Browser redirect to home directory");
+    	
+    }
+    
+    @Test(priority = 10)
+    public void signOut() throws InterruptedException{
+    	Thread.sleep(3000);
+    	driver.navigate().back();
+    	commonMethods.clickOnButton(Locators.settingBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.profileBtn);
+    	timeout.timeout();
+    	commonMethods.clickOnButton(Locators.signOutBtn);
+    	timeout.timeout();
+    	System.out.println("Successfully Sign out");
+    	
     }
 
     @AfterClass
