@@ -1,6 +1,6 @@
-#DesktopAnyDo-Website_Automation_Using_Selenium_and_Page_object_Model
+#DesktopAnyDo_Website_Automation_Using_Page_object_Model
 
-#Technology usedTest 
+#Technology used for Test 
 * tool: Selenium
 * Language: Java
 * Architecture: POM
