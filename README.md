@@ -1,13 +1,16 @@
-# This project automates certain tasks in Any.do, a popular task management application, using Selenium and Maven. The automation script is written in Java.
+# AnyDo-Automaton-selenium
 
-# Technology used for Test 
+
+### This project automates certain tasks in [Any.do](https://app.any.do/), a popular task management application, using Selenium and Maven. The automation script is written in Java.
+
+### Technology used for Test 
 * tool: Selenium
 * Language: Java
 * Architecture: POM
 * Framework: TestNG
 * IDE: eclipse
 
-# Pre Requisites:
+### Pre Requisites:
 * Open/install Java JDK 8 version on your PC
 * Install Maven on your PC
 * Install TestNG on your IDE
@@ -15,7 +18,7 @@
 * Setup Java, Maven environment on your PC
 * Chrome driver match with your browser
 
-# These steps are executed:
+### These steps are executed:
 
 * Open the Chrome browser
 * Maximize the browser window
@@ -81,7 +84,7 @@
 
 * Then Close the browser
 
-#Run the script:
+### Run the script:
 * Right Click to Project
 * Then select Run as TestNG
 * Run the Test Case
